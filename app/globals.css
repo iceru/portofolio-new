@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxanium:wght@200..800&display=swap');
+
+html, body {
+  font-family: 'Nunito';
+  padding: 1rem;
+}
+
+@theme {
+  --font-mono: 'Oxanium';
+  --font-sans: 'Nunito';
+}
