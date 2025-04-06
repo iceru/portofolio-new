@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${oxanium.variable} antialiased bg-slate-900`}
+        className={`${nunito.variable} ${oxanium.variable} antialiased bg-gray-900`}
       >
         {children}
       </body>

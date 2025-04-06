@@ -10,4 +10,6 @@ html, body {
 @theme {
   --font-mono: 'Oxanium';
   --font-sans: 'Nunito';
+  --color-blue: '#3B82F6';
+  --color-teal: "#00FFAB";
 }
