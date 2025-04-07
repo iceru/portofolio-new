@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "name": "May Beauty Care POS",
+      "stacks": ["next", "tailwind", "flutter"],
+      "description": "",
+      "images": [""],
+      "status": "On Progress"
+    },
+    {
+      "name": "Kajoetangan Heritage Village",
+      "stacks": ["next", "express", "tailwind"],
+      "description": "",
+      "images": [""],
+      "status": "Completed"
+    }
+  ]
+}

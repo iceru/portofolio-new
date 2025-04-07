@@ -1,0 +1,49 @@
+[debug] [2025-04-06T12:46:34.447Z] ----------------------------------------------------------------------
+[debug] [2025-04-06T12:46:34.450Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-04-06T12:46:34.451Z] CLI Version:   14.1.0
+[debug] [2025-04-06T12:46:34.451Z] Platform:      win32
+[debug] [2025-04-06T12:46:34.451Z] Node Version:  v22.9.0
+[debug] [2025-04-06T12:46:34.451Z] Time:          Sun Apr 06 2025 19:46:34 GMT+0700 (Western Indonesia Time)
+[debug] [2025-04-06T12:46:34.451Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-06T12:46:34.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-06T12:46:34.642Z] > authorizing via signed-in user (m.hafiz1825@gmail.com)
+[debug] [2025-04-06T12:46:34.642Z] [iam] checking project m-hafiz for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-06T12:46:34.643Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:34.643Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:34.644Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/m-hafiz:testIamPermissions [none]
+[debug] [2025-04-06T12:46:34.644Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/m-hafiz:testIamPermissions x-goog-quota-user=projects/m-hafiz
+[debug] [2025-04-06T12:46:34.645Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/m-hafiz:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-06T12:46:35.814Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/m-hafiz:testIamPermissions 200
+[debug] [2025-04-06T12:46:35.815Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/m-hafiz:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-06T12:46:35.815Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:35.815Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:35.815Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/m-hafiz [none]
+[debug] [2025-04-06T12:46:36.322Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/m-hafiz 200
+[debug] [2025-04-06T12:46:36.323Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/m-hafiz {"projectId":"m-hafiz","projectNumber":"703359623627","displayName":"m-hafiz","name":"projects/m-hafiz","resources":{"hostingSite":"m-hafiz","realtimeDatabaseInstance":"m-hafiz","locationId":"asia-southeast1"},"state":"ACTIVE","etag":"1_604f86c7-b66a-413a-89f5-e18adbf1e357"}
+[debug] [2025-04-06T12:46:40.797Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:40.797Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:40.797Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/m-hafiz/sites pageToken=&pageSize=10
+[debug] [2025-04-06T12:46:41.606Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/m-hafiz/sites 200
+[debug] [2025-04-06T12:46:41.606Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/m-hafiz/sites {"sites":[{"name":"projects/m-hafiz/sites/m-hafiz","defaultUrl":"https://m-hafiz.web.app","appId":"1:703359623627:web:8f8fd0cb35e4ce9ea6564e","type":"DEFAULT_SITE"},{"name":"projects/m-hafiz/sites/porto-m-hafiz","defaultUrl":"https://porto-m-hafiz.web.app","appId":"1:703359623627:web:412031052684b28da6564e","type":"USER_SITE"}]}
+[debug] [2025-04-06T12:46:41.607Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:41.607Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:41.607Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:703359623627:web:8f8fd0cb35e4ce9ea6564e/config [none]
+[debug] [2025-04-06T12:46:42.691Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:703359623627:web:8f8fd0cb35e4ce9ea6564e/config 200
+[debug] [2025-04-06T12:46:42.691Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:703359623627:web:8f8fd0cb35e4ce9ea6564e/config {"projectId":"m-hafiz","appId":"1:703359623627:web:8f8fd0cb35e4ce9ea6564e","databaseURL":"https://m-hafiz.firebaseio.com","storageBucket":"m-hafiz.firebasestorage.app","locationId":"asia-southeast1","apiKey":"AIzaSyDnHXsqpQzrAC5kw1HbxvqGVhza38swDWM","authDomain":"m-hafiz.firebaseapp.com","messagingSenderId":"703359623627","measurementId":"G-M903B5QTV1"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-06T12:46:56.712Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:56.712Z] Checked if tokens are valid: true, expires at: 1743946317765
+[debug] [2025-04-06T12:46:56.713Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/m-hafiz/sites/m-hafiz [none]
+[debug] [2025-04-06T12:46:57.418Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/m-hafiz/sites/m-hafiz 200
+[debug] [2025-04-06T12:46:57.418Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/m-hafiz/sites/m-hafiz {"name":"projects/m-hafiz/sites/m-hafiz","defaultUrl":"https://m-hafiz.web.app","appId":"1:703359623627:web:8f8fd0cb35e4ce9ea6564e","type":"DEFAULT_SITE"}
