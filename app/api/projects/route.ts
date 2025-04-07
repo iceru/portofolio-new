@@ -18,9 +18,17 @@ export async function GET() {
                 [project.id]
             );
 
+            const [images]: any = await db.execute(
+                `
+                SELECT * FROM images WHERE project_id = ?
+                `,
+                [project.id]
+            );
+
             return {
                 ...project,
                 stacks,
+                images
             };
         }));
 

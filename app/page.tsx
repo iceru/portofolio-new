@@ -1,3 +1,4 @@
+import Carousel from "./components/Carousel";
 import Profile from "./components/Profile";
 
 import { ProjectType } from "./interface";
@@ -25,6 +26,8 @@ export default async function Home() {
     projects = data;
   }
 
+  console.log(projects);
+
 
   return (
     <main className="flex">
@@ -37,10 +40,12 @@ export default async function Home() {
             return (
               <div className="bg-white/15 p-6 rounded-3xl text-white mb-4" key={i}>
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-bold">{project.name}</h3>
+                  <a href={project.url} target="_blank">
+                    <h3 className="text-xl font-bold">{project.name}</h3>
+                  </a>
                   {statusBadge(project.status)}
                 </div>
-                <div className="flex">
+                <div className="flex mb-4">
                   {project?.stacks?.map((stack, i) => {
                     return (
                       <div className="px-4 py-1 mr-4 font-bold font-mono bg-white text-[#3B82F6] rounded-full" key={i}>
@@ -49,6 +54,9 @@ export default async function Home() {
                     )
                   })}
                 </div>
+                {project?.images?.length > 0 && (
+                  <Carousel images={project?.images} />
+                )}
               </div>
             )
           })}

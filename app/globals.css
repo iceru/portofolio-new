@@ -13,3 +13,5 @@ html, body {
   --color-blue: '#3B82F6';
   --color-teal: "#00FFAB";
 }
+
+.slick-list{padding:0 20% 0 0 !important;}

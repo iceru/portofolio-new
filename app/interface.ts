@@ -10,4 +10,13 @@ export interface ProjectType {
     description?: string
     status: string
     stacks: StackType[]
+    images: ImageType[]
+    url: string
+}
+
+export interface ImageType {
+    id: number
+    filename?: string
+    path: string
+    project_id: number
 }
