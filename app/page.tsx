@@ -12,8 +12,10 @@ export default function Home() {
   useEffect(() => {
     // Always listen to scroll
     const handleScroll = () => {
-      if (window.scrollY > 500 && !isCollapsed) {
-        setIsCollapsed(true);
+      if (window.innerWidth >= 1024) {
+        if (window.scrollY > 500 && !isCollapsed) {
+          setIsCollapsed(true);
+        }
       }
     };
 
@@ -37,7 +39,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex container mx-auto">
+    <main className="flex flex-col lg:flex-row container mx-auto">
       <Profile isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
       <ProjectsPage projects={projects} isCollapsed={isCollapsed} />
     </main>

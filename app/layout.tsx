@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Oxanium, Nunito } from "next/font/google";
+import 'material-symbols';
 import "./globals.css";
 
 const nunito = Nunito({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${oxanium.variable} antialiased bg-gray-900`}
+        className={`${nunito.variable} ${oxanium.variable} antialiased bg-gray-900 p-4 lg:p-8`}
       >
         {children}
       </body>
