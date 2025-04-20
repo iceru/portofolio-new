@@ -1,18 +1,65 @@
 "use client"
 
 import { NextPage } from 'next'
-import React from 'react'
-import { ProjectType } from '../interface'
-// import Image from 'next/image'
-import Carousel from './Carousel'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 
+import Carousel from './Carousel'
+import Filter from './Filter'
+
+import { ProjectType, StackType } from '../interface'
+import { baseUrl } from '../lib/utils'
+
 interface Props {
-    projects: ProjectType[]
     isCollapsed: boolean
 }
 
-const ProjectsPage: NextPage<Props> = ({ projects, isCollapsed }) => {
+const ProjectsPage: NextPage<Props> = ({ isCollapsed }) => {
+    const [selectedStacks, setSelectedStacks] = useState<StackType[]>([]);
+    const [stacks, setStacks] = useState<StackType[]>([]);
+    const [projects, setProjects] = useState<ProjectType[]>([]);
+    const [allProjects, setAllProjects] = useState<ProjectType[]>([]);
+
+    const getProjects = async () => {
+        const res = await fetch(`${baseUrl}/api/projects`);
+        if (res.ok) {
+            const data = await res.json();
+            setAllProjects(data);
+            setProjects(data);
+        } else {
+            console.error('Error fetching projects');
+        }
+    };
+
+    const getStacks = async () => {
+        const res = await fetch(`${baseUrl}/api/stacks`);
+        if (res.ok) {
+            const data = await res.json();
+            setStacks(data);
+        } else {
+            console.error('Error fetching stacks');
+        }
+    }
+
+    useEffect(() => {
+        getProjects();
+        getStacks();
+    }, []);
+
+
+    useEffect(() => {
+        if (selectedStacks.length > 0) {
+            const filtered = allProjects.filter((project) =>
+                selectedStacks.some((selected) =>
+                    project.stacks.some((stack) => stack.name === selected.name)
+                )
+            );
+            setProjects(filtered);
+        } else {
+            setProjects(allProjects);
+        }
+    }, [selectedStacks, allProjects]);
+
     const statusBadge = (status: string) => {
         let color = "bg-green-600";
         if (status.includes('Progress')) {
@@ -25,7 +72,7 @@ const ProjectsPage: NextPage<Props> = ({ projects, isCollapsed }) => {
     return (
         <section className={`bg-[#3B82F6] w-full ${isCollapsed ? "lg:w-[90%]" : 'lg:w-[60%]'} rounded-3xl p-4 lg:p-6`} id='projects'>
             <h2 className="text-center text-white font-mono text-3xl font-bold mb-4">Projects</h2>
-
+            <Filter setSelectedStacks={setSelectedStacks} selectedStacks={selectedStacks} stacks={stacks} />
             <div>
                 {projects?.map((project: ProjectType, i: number) => {
                     return (
@@ -52,15 +99,6 @@ const ProjectsPage: NextPage<Props> = ({ projects, isCollapsed }) => {
                                     )
                                 })}
                             </div>
-                            {/* <div className='flex overflow-x-auto whitespace-nowrap gap-4 w-full pb-2'>
-                                {project?.images?.length > 0 && project?.images.map((image) => {
-                                    return (
-                                        <div key={image.id} className='min-w-[50%] flex-shrink-0'>
-                                            <Image src={image.path} width={500} height={350} className='w-full h-auto' alt={project.name} />
-                                        </div>
-                                    )
-                                })}
-                            </div> */}
                             <div>
                                 {project?.images?.length > 0 && (<Carousel collapse={isCollapsed} images={project?.images} />)}
                             </div>

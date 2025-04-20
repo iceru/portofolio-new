@@ -85,9 +85,11 @@ const Profile: NextPage<Props> = ({ isCollapsed, setIsCollapsed }) => {
                     </a>
                 </div> */}
             </div>
-            <div className="absolute w-full bottom-4 left-0">
-                <Image className="w-full" src={wave} alt="" />
-            </div>
+            {!isCollapsed && (
+                <div className="absolute w-full bottom-4 left-0">
+                    <Image className="w-full" src={wave} alt="" />
+                </div>
+            )}
         </section>
     );
 };
