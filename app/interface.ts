@@ -1,7 +1,7 @@
 export interface StackType {
     id: number
     name: string
-    image?: string
+    image: string
 }
 
 export interface ProjectType {

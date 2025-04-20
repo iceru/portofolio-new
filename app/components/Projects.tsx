@@ -5,6 +5,7 @@ import React from 'react'
 import { ProjectType } from '../interface'
 // import Image from 'next/image'
 import Carousel from './Carousel'
+import Image from 'next/image'
 
 interface Props {
     projects: ProjectType[]
@@ -40,8 +41,13 @@ const ProjectsPage: NextPage<Props> = ({ projects, isCollapsed }) => {
                             <div className="flex flex-wrap mb-4">
                                 {project?.stacks?.map((stack, i) => {
                                     return (
-                                        <div className="px-4 py-1 mr-2 lg:mr-4 mb-2 lg:mb-0 font-bold text-sm lg:text-base font-mono bg-white text-[#3B82F6] rounded-full" key={i}>
-                                            {stack.name}
+                                        <div className="px-4 py-1 mr-2 flex items-center lg:mr-4 mb-2 lg:mb-0 font-bold text-sm lg:text-base font-mono bg-white text-[#3B82F6] rounded-full" key={i}>
+                                            <div className='mr-2'>
+                                                <Image src={stack.image} width={20} height={20} className='object-contain' alt={stack.name} />
+                                            </div>
+                                            <div>
+                                                {stack.name}
+                                            </div>
                                         </div>
                                     )
                                 })}

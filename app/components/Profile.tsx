@@ -16,14 +16,13 @@ interface Props {
 const Profile: NextPage<Props> = ({ isCollapsed, setIsCollapsed }) => {
     const [offset, setOffset] = useState(0);
 
-    // Track scroll position
     useEffect(() => {
         const handleScroll = () => {
             setOffset(window.pageYOffset);
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // set initial
+        handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -41,15 +40,15 @@ const Profile: NextPage<Props> = ({ isCollapsed, setIsCollapsed }) => {
     };
 
     return (
-        <section
+        <section onClick={isCollapsed ? handleClick : () => null}
             className={`bg-[#00FFAB] text-gray-900 rounded-3xl p-6 flex justify-center items-center flex-col transition-all duration-500 ease-in-out
-        ${isCollapsed ? 'w-full lg:h-full h-[80px] lg:w-[100px] lg:pb-14' : 'w-full lg:w-[40%] min-h-[80vh]'} mr-4 lg:min-h-[90vh] mb-6 lg:mb-0 max-h-[90vh] lg:sticky relative lg:top-6 shrink-0`}
+        ${isCollapsed ? 'w-full lg:h-full h-[80px] lg:w-[100px] lg:pb-14 cursor-pointer' : 'w-full lg:w-[40%] min-h-[80vh]'} mr-4 lg:min-h-[90vh] mb-6 lg:mb-0 max-h-[90vh] lg:sticky relative lg:top-6 shrink-0`}
         >
             <div className={`text-center flex flex-col ${isCollapsed ? 'justify-end' : 'justify-center'} items-center h-full`}>
                 <button
                     type="button"
                     onClick={isCollapsed ? handleClick : () => setIsCollapsed(true)}
-                    className={`hidden lg:block cursor-pointer text-lg font-bold mb-4 font-mono absolute top-6 ${isCollapsed ? 'left-2 w-[80px]' : 'left-6'}`}
+                    className={`hidden lg:block cursor-pointer text-lg font-bold mb-4 font-mono absolute top-6 ${isCollapsed ? 'left-2.5 w-[80px]' : 'left-6'}`}
                 >
                     {isCollapsed ? collapseText : 'Collapse Me!'}
                 </button>
@@ -65,14 +64,14 @@ const Profile: NextPage<Props> = ({ isCollapsed, setIsCollapsed }) => {
                     </>
                 )}
 
-                <div className={`flex justify-center items-center transition-all duration-500 ease-in-out ${isCollapsed ? 'lg:flex-col lg:space-y-4 space-x-4' : 'flex-row space-x-4'}`}>
-                    <a href="https://github.com/iceru" target="_blank" className="hover:opacity-80 transition">
+                <div className={`flex justify-center items-center transition-all duration-500 ease-in-out ${isCollapsed ? 'lg:flex-col lg:space-y-4 lg:space-x-0 space-x-4' : 'flex-row space-x-4'}`}>
+                    <a href="https://github.com/iceru" target="_blank" className="hover:opacity-80 transition" onClick={(e) => e.stopPropagation()}>
                         <Image width={24} src={github} alt="Github" />
                     </a>
-                    <a href="https://www.linkedin.com/in/hafizeto/" target="_blank" className="hover:opacity-80 transition">
+                    <a href="https://www.linkedin.com/in/hafizeto/" target="_blank" className="hover:opacity-80 transition" onClick={(e) => e.stopPropagation()}>
                         <Image width={24} src={linkedin} alt="LinkedIn" />
                     </a>
-                    <a href="https://x.com/Hafizeto" target="_blank" className="hover:opacity-80 transition">
+                    <a href="https://x.com/Hafizeto" target="_blank" className="hover:opacity-80 transition" onClick={(e) => e.stopPropagation()}>
                         <Image width={24} src={twitter} alt="Twitter" />
                     </a>
                 </div>

@@ -5,7 +5,7 @@ import pool from "../db";
 export async function GET() {
     try {
         const db = await pool.getConnection();
-        const [projects]: any = await db.execute('SELECT * FROM projects');
+        const [projects]: any = await db.execute('SELECT * FROM projects ORDER BY created_at');
 
         // Enrich each project with its related stacks through the pivot table
         const enrichedProjects = await Promise.all(projects.map(async (project: any) => {

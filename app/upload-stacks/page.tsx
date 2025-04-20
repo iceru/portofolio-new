@@ -1,15 +1,16 @@
 "use client"
 
 import { useRef, useState, useEffect } from 'react';
+// import { useSearchParams } from 'next/navigation';
 import { baseUrl } from '../lib/utils';
-import { ProjectType } from '../interface';
+import { StackType } from '../interface';
 
 export default function UploadPage() {
     const [file, setFile] = useState<File | null>(null);
     const [previewUrl, setPreviewUrl] = useState<string | null>(null);
     const [successUpload, setSuccessUpload] = useState<boolean | null>(false);
-    const [projects, setProjects] = useState<ProjectType[]>();
-    const [project, setProject] = useState<number>(1);
+    const [stacks, setStacks] = useState<StackType[]>();
+    const [stack, setStack] = useState<number>(1);
 
     const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -24,13 +25,13 @@ export default function UploadPage() {
         }
     };
 
-    const getProjects = async () => {
-        const res = await fetch(`${baseUrl}/api/projects`);
+    const getStacks = async () => {
+        const res = await fetch(`${baseUrl}/api/stacks`);
 
         if (res.ok) {
             const data = await res.json();
-            setProjects(data);
-            setProject(data[0].id);
+            setStacks(data);
+            setStack(data[0].id);
         }
     }
 
@@ -41,7 +42,7 @@ export default function UploadPage() {
         const formData = new FormData();
         formData.append('file', file);
 
-        const res = await fetch(`${baseUrl}/api/images/upload?id=${project}`, {
+        const res = await fetch(`${baseUrl}/api/stacks/upload?id=${stack}`, {
             method: 'POST',
             body: formData,
         });
@@ -58,17 +59,17 @@ export default function UploadPage() {
     };
 
     useEffect(() => {
-        getProjects();
+        getStacks();
     }, [])
 
     return (
         <div className='text-white p-8'>
             <div className="flex items-center gap-4 mb-4">
-                <p>Select Projects</p>
-                <select name="projects" id="" className='bg-gray-900' onChange={(e) => setProject(parseInt(e.target.value))}>
-                    {projects?.map((project) => {
+                <p>Select Stacks</p>
+                <select name="stacks" id="" className='bg-gray-900' onChange={(e) => setStack(parseInt(e.target.value))}>
+                    {stacks?.map((stack) => {
                         return (
-                            <option className='bg-gray-900' key={project.id} value={project.id}>{project.name}</option>
+                            <option className='bg-gray-900' key={stack.id} value={stack.id}>{stack.name}</option>
                         )
                     })}
                 </select>
@@ -95,7 +96,6 @@ export default function UploadPage() {
                     onClick={handleUpload}
                     className='border border-white px-4 py-2 rounded-lg'
                     disabled={!file}
-                    type='button'
                 >
                     Upload
                 </button>
