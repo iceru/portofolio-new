@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navigation() {
     return (
-        <nav className='flex items-center justify-between mb-6'>
-            <ul className='flex items-center font-bold font-mono text-xl gap-10'>
-                <li className=''>
+        <nav className='flex items-center justify-center text-white mb-6'>
+            <ul className='flex items-center lg:text-lg tracking-wide font-mono gap-10'>
+                <li className='' >
                     <a href="#">
                         Home
                     </a>
@@ -19,11 +19,11 @@ function Navigation() {
                         Projects
                     </a>
                 </li>
-            </ul>
+            </ul >
             {/* <div className='shrink-0 font-mono'>
                 <a href="" className='bg-teal-400 text-slate-900 font-bold text-xl px-4 py-2 rounded-full'>Hire Me</a>
             </div> */}
-        </nav>
+        </nav >
     )
 }
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Oxanium, Nunito } from "next/font/google";
 import 'material-symbols';
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -26,9 +27,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${oxanium.variable} antialiased bg-gray-900 p-4 lg:p-8`}
+        className={`${nunito.variable} ${oxanium.variable} antialiased bg-neutral-800`}
       >
-        {children}
+        <main className="p-6 px-12 text-neutral-800">
+          <section>
+            <Navigation />
+          </section>
+          {children}
+          <section className="text-white mt-6 text-center">
+            &copy; Copyright  - Muhamad Hafiz 2025
+          </section>
+        </main>
       </body>
     </html>
   );
