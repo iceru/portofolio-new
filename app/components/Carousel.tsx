@@ -10,16 +10,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 interface Props {
     images: ImageType[]
-    collapse: boolean
 }
 
-const Carousel: NextPage<Props> = ({ images, collapse }) => {
+const Carousel: NextPage<Props> = ({ images }) => {
     const settings = {
         dots: false,
         arrows: false,
         infinite: true,
         speed: 500,
-        slidesToShow: collapse ? 2 : 1,
+        slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '10%',

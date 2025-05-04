@@ -29,7 +29,7 @@ const Filter: NextPage<Props> = ({ setSelectedStacks, selectedStacks, stacks }) 
     return (
         <section className='flex items-center mb-4'>
             <div className='relative'>
-                <button type='button' onClick={() => setOpenStacks(!openStacks)} className='px-4 font-bold font-mono py-2 rounded-full bg-white/15 border border-white text-white relative z-10'>
+                <button type='button' onClick={() => setOpenStacks(!openStacks)} className='px-4 font-bold font-mono py-2 rounded-xl border-2 border-neutral-800 text-neutral-800 relative z-10'>
                     {selectedStacks?.length > 0 ? (<div className='flex gap-2 items-center max-w-[300px] text-ellipsis overflow-hidden'>
                         {selectedStacks?.map((stack) => {
                             return (

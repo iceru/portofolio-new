@@ -1,31 +1,46 @@
-'use client';
-
-import React, { useEffect, useState } from 'react';
-import Profile from "./components/Profile";
-import ProjectsPage from "./components/Projects";
+import github from "./images/github.png";
+import linkedin from "./images/linkedin.png";
+import twitter from "./images/twitter.png";
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-
-  useEffect(() => {
-    // Always listen to scroll
-    const handleScroll = () => {
-      if (window.innerWidth >= 1024) {
-        if (window.scrollY > 500 && !isCollapsed) {
-          setIsCollapsed(true);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isCollapsed]);
+  const calculateYears = () => {
+    const current = new Date().getFullYear();
+    const old = new Date('08 Oct 2020').getFullYear();
+    return current - old;
+  };
 
 
   return (
-    <main className="flex flex-col lg:flex-row container mx-auto">
-      <Profile isCollapsed={isCollapsed} setIsCollapsed={setIsCollapsed} />
-      <ProjectsPage isCollapsed={isCollapsed} />
+    <main className="bg-white h-[80vh] w-full p-8 px-16 rounded-3xl grid lg:grid-cols-2 gap-8 items-center container mx-auto">
+      <div>
+        <div>
+          <h2 className="text-4xl mb-4">
+            Hello, My Name is <span className="font-mono font-bold">Hafiz!</span>
+          </h2>
+          <p className="mb-4 text-xl">
+            I’m a Passionate Full-Stack Developer with <span className="font-mono font-bold">{calculateYears()} years</span> of experience with building all aspects of user interface and user experience. Specialize in <span className="font-mono font-bold">HTML, CSS, React.js, Vue.js, Express.Js, Laravel and Wordpress</span> to build various types of websites.
+          </p>
+        </div>
+        <div className="flex items-center">
+          <div className='inline-flex mr-4 items-center transition-all duration-500 ease-in-out px-4 py-2 border-2 border-neutral-800 rounded-xl'>
+            <p className="mr-2 font-bold text-lg">Social:</p>
+            <a href="https://github.com/iceru" target="_blank" className="hover:opacity-80 transition mr-4">
+              <Image width={24} src={github} alt="Github" />
+            </a>
+            <a href="https://www.linkedin.com/in/hafizeto/" target="_blank" className="hover:opacity-80 transition mr-4">
+              <Image width={24} src={linkedin} alt="LinkedIn" />
+            </a>
+            <a href="https://x.com/Hafizeto" target="_blank" className="hover:opacity-80 transition">
+              <Image width={24} src={twitter} alt="Twitter" />
+            </a>
+          </div>
+          <Link href="/projects" className="px-5 py-2.5 font-bold bg-neutral-800 hover:bg-neutral-700 transition text-white text-lg rounded-xl">
+            Projects
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }

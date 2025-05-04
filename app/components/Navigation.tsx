@@ -1,28 +1,26 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Navigation() {
     return (
         <nav className='flex items-center justify-center text-white mb-6'>
             <ul className='flex items-center lg:text-lg tracking-wide font-mono gap-10'>
-                <li className='' >
-                    <a href="#">
+                <li className='transition hover:opacity-90' >
+                    <Link href="/">
                         Home
-                    </a>
+                    </Link>
                 </li>
-                <li className=''>
-                    <a href="#">
+                <li className='transition hover:opacity-90'>
+                    <Link href="/works">
                         Professional Works
-                    </a>
+                    </Link>
                 </li>
-                <li className=''>
-                    <a href="#">
+                <li className='transition hover:opacity-90'>
+                    <Link href="/projects">
                         Projects
-                    </a>
+                    </Link>
                 </li>
-            </ul >
-            {/* <div className='shrink-0 font-mono'>
-                <a href="" className='bg-teal-400 text-slate-900 font-bold text-xl px-4 py-2 rounded-full'>Hire Me</a>
-            </div> */}
+            </ul>
         </nav >
     )
 }
