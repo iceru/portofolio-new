@@ -8,7 +8,7 @@ function Navigation() {
     return (
         <>
             <nav className='flex items-center justify-between text-white mb-3 lg:mb-6 container mx-auto'>
-                <div>
+                <div className='lg:hidden block'>
                     <button type='button' className='text-white' onClick={() => { setOpen(!open) }}>
                         <span className="material-symbols-outlined">
                             menu
@@ -35,9 +35,11 @@ function Navigation() {
                         </Link>
                     </li>
                 </ul>
-                <a href='mailto:m.hafiz1825@gmail.com' target='_blank' className='hidden lg:flex font-bold font-mono bg-white text-neutral-800 rounded-xl px-4 py-1.5 items-center'>
-                    Contact Me
-                    <span className="material-symbols-outlined ml-2 !text-base">
+                <a href='mailto:m.hafiz1825@gmail.com' target='_blank' className='hidden lg:flex items-center font-bold font-mono bg-white text-neutral-800 rounded-xl px-4 py-1.5'>
+                    <p>
+                        Contact Me
+                    </p>
+                    <span className="material-symbols-outlined ml-2">
                         open_in_new
                     </span>
                 </a>

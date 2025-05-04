@@ -13,6 +13,7 @@ interface Props {
 
 const Filter: NextPage<Props> = ({ setSelectedStacks, selectedStacks, stacks }) => {
     const [openStacks, setOpenStacks] = useState(false);
+    // const [openStatus, setOpenStatus] = useState(false);
     const selectStack = (stack: StackType) => {
         const isSelected = selectedStacks.some((s) => s.id === stack.id)
         if (isSelected) {
@@ -57,8 +58,8 @@ const Filter: NextPage<Props> = ({ setSelectedStacks, selectedStacks, stacks }) 
                     })}
                 </div>
             </div>
-            <div className='relative'>
-                <button type='button' onClick={() => setOpenStacks(!openStacks)} className='px-3 py-1.5 lg:px-4 font-bold font-mono lg:py-2 text-sm lg:text-ba rounded-xl border-2 border-neutral-800 text-neutral-800 relative z-10'>
+            {/* <div className='relative'>
+                <button type='button' onClick={() => setOpenStatus(!openStatus)} className='px-3 py-1.5 lg:px-4 font-bold font-mono lg:py-2 text-sm lg:text-ba rounded-xl border-2 border-neutral-800 text-neutral-800 relative z-10'>
                     {selectedStacks?.length > 0 ? (<div className='flex gap-2 items-center max-w-[300px] text-ellipsis overflow-hidden'>
                         {selectedStacks?.map((stack) => {
                             return (
@@ -70,22 +71,21 @@ const Filter: NextPage<Props> = ({ setSelectedStacks, selectedStacks, stacks }) 
                     </span></div>)}
                 </button>
                 <div className={`grid lg:grid-cols-2 gap-2 absolute left-0 top-12 bg-white border-2 border-neutral-800 w-[320px] overflow-hidden p-4
-                    rounded-3xl z-50 transition-all duration-300 ease-in-out ${openStacks ? 'max-h-[1000px] opacity-100' : 'max-h-[0] opacity-0'}`}>
-                    {stacks?.map((stack) => {
-                        return (
-                            <label key={stack.id} className='flex items-center gap-1 whitespace-nowrap'>
-                                <input
-                                    type='checkbox'
-                                    checked={isChecked(stack)}
-                                    onChange={() => selectStack(stack)}
-                                />
-                                <Image src={stack.image} width={16} height={16} className='mr-0.5' alt={stack.name} />
-                                <span className='font-mono text-neutral-800'>{stack.name}</span>
-                            </label>
-                        )
-                    })}
+                    rounded-3xl z-50 transition-all duration-300 ease-in-out ${openStatus ? 'max-h-[1000px] opacity-100' : 'max-h-[0] opacity-0'}`}>
+                    <label className='flex items-center gap-1 whitespace-nowrap'>
+                        <input
+                            type='checkbox'
+                        />
+                        <span className='font-mono text-neutral-800'>On Progress</span>
+                    </label>
+                    <label className='flex items-center gap-1 whitespace-nowrap'>
+                        <input
+                            type='checkbox'
+                        />
+                        <span className='font-mono text-neutral-800'>Completed</span>
+                    </label>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

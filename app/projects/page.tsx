@@ -57,7 +57,7 @@ export default function Projects() {
 
         return (
             <div className={`font-mono inline-flex items-center font-bold rounded-full text-sm`}>
-                <span className="material-symbols-outlined !text-base mr-1">
+                <span className="material-symbols-outlined mr-1">
                     {status.includes('Completed') ? "task_alt" : "timelapse"}
                 </span>
                 {status}
