@@ -13,13 +13,13 @@ export default function Home() {
 
 
   return (
-    <main className="bg-white h-[80vh] w-full p-8 px-16 rounded-3xl grid lg:grid-cols-2 gap-8 items-center container mx-auto">
+    <main className="bg-white h-[80vh] w-full p-4 lg:p-8 lg:px-16 rounded-3xl grid lg:grid-cols-2 gap-8 items-center container mx-auto">
       <div>
         <div>
-          <h2 className="text-4xl mb-4">
+          <h2 className="text-2xl lg:text-4xl mb-4">
             Hello, My Name is <span className="font-mono font-bold">Hafiz!</span>
           </h2>
-          <p className="mb-4 text-xl">
+          <p className="mb-4 lg:text-xl">
             I’m a Passionate Full-Stack Developer with <span className="font-mono font-bold">{calculateYears()} years</span> of experience with building all aspects of user interface and user experience. Specialize in <span className="font-mono font-bold">HTML, CSS, React.js, Vue.js, Express.Js, Laravel and Wordpress</span> to build various types of websites.
           </p>
         </div>
@@ -40,6 +40,9 @@ export default function Home() {
             Projects
           </Link>
         </div>
+      </div>
+      <div>
+
       </div>
     </main>
   );

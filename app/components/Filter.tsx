@@ -27,20 +27,20 @@ const Filter: NextPage<Props> = ({ setSelectedStacks, selectedStacks, stacks }) 
     }
 
     return (
-        <section className='flex items-center mb-4'>
-            <div className='relative'>
-                <button type='button' onClick={() => setOpenStacks(!openStacks)} className='px-4 font-bold font-mono py-2 rounded-xl border-2 border-neutral-800 text-neutral-800 relative z-10'>
+        <section className='flex items-center mb-4 pb-4 border-b border-neutral-800'>
+            <div className='relative mr-4'>
+                <button type='button' onClick={() => setOpenStacks(!openStacks)} className='px-3 py-1.5 lg:px-4 font-bold font-mono lg:py-2 text-sm lg:text-ba rounded-xl border-2 border-neutral-800 text-neutral-800 relative z-10'>
                     {selectedStacks?.length > 0 ? (<div className='flex gap-2 items-center max-w-[300px] text-ellipsis overflow-hidden'>
                         {selectedStacks?.map((stack) => {
                             return (
                                 <div className='whitespace-nowrap' key={stack.id}>{stack.name}</div>
                             )
                         })}
-                    </div>) : (<div className='flex items-center'>Filter Stacks <span className="material-symbols-outlined ml-0.5">
+                    </div>) : (<div className='flex items-center'>Stacks <span className="material-symbols-outlined ml-0.5">
                         keyboard_arrow_down
                     </span></div>)}
                 </button>
-                <div className={`grid lg:grid-cols-2 gap-2 absolute left-0 top-12 bg-white/70 backdrop-blur-3xl w-[320px] overflow-hidden p-4
+                <div className={`grid lg:grid-cols-2 gap-2 absolute left-0 top-12 bg-white border-2 border-neutral-800 w-[320px] overflow-hidden p-4
                     rounded-3xl z-50 transition-all duration-300 ease-in-out ${openStacks ? 'max-h-[1000px] opacity-100' : 'max-h-[0] opacity-0'}`}>
                     {stacks?.map((stack) => {
                         return (
@@ -51,7 +51,36 @@ const Filter: NextPage<Props> = ({ setSelectedStacks, selectedStacks, stacks }) 
                                     onChange={() => selectStack(stack)}
                                 />
                                 <Image src={stack.image} width={16} height={16} className='mr-0.5' alt={stack.name} />
-                                <span className='font-mono text-[#3B82F6]'>{stack.name}</span>
+                                <span className='font-mono text-neutral-800'>{stack.name}</span>
+                            </label>
+                        )
+                    })}
+                </div>
+            </div>
+            <div className='relative'>
+                <button type='button' onClick={() => setOpenStacks(!openStacks)} className='px-3 py-1.5 lg:px-4 font-bold font-mono lg:py-2 text-sm lg:text-ba rounded-xl border-2 border-neutral-800 text-neutral-800 relative z-10'>
+                    {selectedStacks?.length > 0 ? (<div className='flex gap-2 items-center max-w-[300px] text-ellipsis overflow-hidden'>
+                        {selectedStacks?.map((stack) => {
+                            return (
+                                <div className='whitespace-nowrap' key={stack.id}>{stack.name}</div>
+                            )
+                        })}
+                    </div>) : (<div className='flex items-center'>Status <span className="material-symbols-outlined ml-0.5">
+                        keyboard_arrow_down
+                    </span></div>)}
+                </button>
+                <div className={`grid lg:grid-cols-2 gap-2 absolute left-0 top-12 bg-white border-2 border-neutral-800 w-[320px] overflow-hidden p-4
+                    rounded-3xl z-50 transition-all duration-300 ease-in-out ${openStacks ? 'max-h-[1000px] opacity-100' : 'max-h-[0] opacity-0'}`}>
+                    {stacks?.map((stack) => {
+                        return (
+                            <label key={stack.id} className='flex items-center gap-1 whitespace-nowrap'>
+                                <input
+                                    type='checkbox'
+                                    checked={isChecked(stack)}
+                                    onChange={() => selectStack(stack)}
+                                />
+                                <Image src={stack.image} width={16} height={16} className='mr-0.5' alt={stack.name} />
+                                <span className='font-mono text-neutral-800'>{stack.name}</span>
                             </label>
                         )
                     })}

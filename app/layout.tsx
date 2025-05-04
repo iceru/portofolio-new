@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={`${nunito.variable} ${oxanium.variable} antialiased bg-neutral-800`}
       >
-        <main className="p-6 px-12 text-neutral-800">
+        <main className="p-4 lg:p-6 lg:px-12 text-neutral-800">
           <section>
             <Navigation />
           </section>

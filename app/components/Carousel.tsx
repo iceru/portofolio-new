@@ -17,12 +17,9 @@ const Carousel: NextPage<Props> = ({ images }) => {
         dots: false,
         arrows: false,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        centerMode: true,
-        centerPadding: '10%',
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000
     };
     return (
@@ -30,7 +27,7 @@ const Carousel: NextPage<Props> = ({ images }) => {
             {images?.map((image) => {
                 return (
                     <div key={image.id}>
-                        <Image className="rounded-lg pr-4 w-full h-auto" src={image.path} width={600} height={400} alt={image.filename || 'Image'} />
+                        <Image className="rounded-lg lg:pr-4 w-full h-auto" src={image.path} width={600} height={400} alt={image.filename || 'Image'} />
                     </div>
                 )
             })}
