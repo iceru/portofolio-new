@@ -24,11 +24,11 @@ function Navigation() {
                             Home
                         </Link>
                     </li>
-                    <li className='transition hover:opacity-90'>
+                    {/* <li className='transition hover:opacity-90'>
                         <Link href="/works">
                             Professional Works
                         </Link>
-                    </li>
+                    </li> */}
                     <li className='transition hover:opacity-90'>
                         <Link href="/projects">
                             Projects
