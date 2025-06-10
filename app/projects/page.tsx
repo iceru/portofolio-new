@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { ProjectType, StackType } from "../interface";
-import { baseUrl } from "../lib/utils";
 import Filter from "../components/Filter";
 import Image from "next/image";
 import Carousel from "../components/Carousel";
+import projectsData from "../data/projects.json";
+import stacksData from "../data/stacks.json";
 
 export default function Projects() {
     const [selectedStacks, setSelectedStacks] = useState<StackType[]>([]);
@@ -13,25 +14,16 @@ export default function Projects() {
     const [projects, setProjects] = useState<ProjectType[]>([]);
     const [allProjects, setAllProjects] = useState<ProjectType[]>([]);
 
+
     const getProjects = async () => {
-        const res = await fetch(`${baseUrl}/api/projects`);
-        if (res.ok) {
-            const data = await res.json();
-            setAllProjects(data);
-            setProjects(data);
-        } else {
-            console.error('Error fetching projects');
-        }
+        const data = projectsData;
+        setAllProjects(data);
+        setProjects(data);
     };
 
     const getStacks = async () => {
-        const res = await fetch(`${baseUrl}/api/stacks`);
-        if (res.ok) {
-            const data = await res.json();
-            setStacks(data);
-        } else {
-            console.error('Error fetching stacks');
-        }
+        const data = stacksData;
+        setStacks(data);
     }
 
     useEffect(() => {

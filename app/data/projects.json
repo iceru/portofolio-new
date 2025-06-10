@@ -1,0 +1,644 @@
+[
+  {
+    "id": 1,
+    "name": "May Beauty Care POS",
+    "description": "May Beauty Care POS System is a comprehensive point-of-sale solution developed using Next.js and Express.js for a seamless web application experience. Additionally, the system is wrapped with Flutter to enable Bluetooth printer connectivity, facilitating efficient receipt printing directly from the app.",
+    "status": "On Progress",
+    "url": "",
+    "created_at": "2025-04-20T13:29:39.000Z",
+    "stacks": [
+      {
+        "id": 1,
+        "code": "next",
+        "name": "Next.js",
+        "image": "/uploads/stacks/Next.js.png"
+      },
+      {
+        "id": 3,
+        "code": "tailwind",
+        "name": "Tailwind",
+        "image": "/uploads/stacks/Tailwind_CSS.png"
+      },
+      {
+        "id": 10,
+        "code": "flutter",
+        "name": "Flutter",
+        "image": "/uploads/stacks/Flutter.png"
+      },
+      {
+        "id": 2,
+        "code": "express",
+        "name": "Express.js",
+        "image": "/uploads/stacks/Express.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 6,
+        "path": "/uploads/localhost_3001_pos(768p)_(1).png",
+        "project_id": 1,
+        "filename": "localhost_3001_pos(768p)_(1).png"
+      },
+      {
+        "id": 7,
+        "path": "/uploads/localhost_3001_pos(768p)_(2).png",
+        "project_id": 1,
+        "filename": "localhost_3001_pos(768p)_(2).png"
+      },
+      {
+        "id": 8,
+        "path": "/uploads/localhost_3001_pos(768p)_(3).png",
+        "project_id": 1,
+        "filename": "localhost_3001_pos(768p)_(3).png"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Kajoetangan Heritage",
+    "description": "Kajoetangan Heritage Village is a digital platform that highlights the cultural and historical richness of one of Malang’s most iconic heritage areas. I developed the landing page using Next.js, delivering a fast, SEO-optimized, and responsive user experience.\n\nIn addition, I built a dashboard API using Express.js to support an AR (Augmented Reality) app, enabling real-time data management for digital heritage experiences. This project bridges modern web technology with cultural preservation, enhancing tourism through interactive and immersive tools.\n\n",
+    "status": "Completed",
+    "url": "https://kajoetanganheritagevillage.com",
+    "created_at": "2025-04-20T13:29:41.000Z",
+    "stacks": [
+      {
+        "id": 1,
+        "code": "next",
+        "name": "Next.js",
+        "image": "/uploads/stacks/Next.js.png"
+      },
+      {
+        "id": 2,
+        "code": "express",
+        "name": "Express.js",
+        "image": "/uploads/stacks/Express.png"
+      },
+      {
+        "id": 3,
+        "code": "tailwind",
+        "name": "Tailwind",
+        "image": "/uploads/stacks/Tailwind_CSS.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 9,
+        "path": "/uploads/kajoetanganheritagevillage.com_en(768p).png",
+        "project_id": 2,
+        "filename": "kajoetanganheritagevillage.com_en(768p).png"
+      },
+      {
+        "id": 10,
+        "path": "/uploads/kajoetanganheritagevillage.com_en(768p)_(2).png",
+        "project_id": 2,
+        "filename": "kajoetanganheritagevillage.com_en(768p)_(2).png"
+      },
+      {
+        "id": 11,
+        "path": "/uploads/kajoetanganheritagevillage.com_en(768p)_(1).png",
+        "project_id": 2,
+        "filename": "kajoetanganheritagevillage.com_en(768p)_(1).png"
+      },
+      {
+        "id": 12,
+        "path": "/uploads/kajoetanganheritagevillage.com_admin_photos(768p).png",
+        "project_id": 2,
+        "filename": "kajoetanganheritagevillage.com_admin_photos(768p).png"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Eco Tourism Bali",
+    "description": "Eco Tourism Bali is a sustainability-focused platform dedicated to transforming Bali into a climate-neutral and environmentally responsible destination. The project features a membership-based web application built with Laravel and React, providing a secure and efficient system for verifying eco-friendly accommodations and restaurants. Additionally, the company profile site was developed using WordPress, allowing for easy content management and public engagement.",
+    "status": "Completed",
+    "url": "https://ecotourismbali.com",
+    "created_at": "2025-04-20T13:29:43.000Z",
+    "stacks": [
+      {
+        "id": 4,
+        "code": "laravel",
+        "name": "Laravel",
+        "image": "/uploads/stacks/Laravel.png"
+      },
+      {
+        "id": 5,
+        "code": "react",
+        "name": "React.js",
+        "image": "/uploads/stacks/React.png"
+      },
+      {
+        "id": 3,
+        "code": "tailwind",
+        "name": "Tailwind",
+        "image": "/uploads/stacks/Tailwind_CSS.png"
+      },
+      {
+        "id": 6,
+        "code": "wordpress",
+        "name": "Wordpress",
+        "image": "/uploads/stacks/wordpress.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 13,
+        "path": "/uploads/ecotourismbali.com_(768p).png",
+        "project_id": 3,
+        "filename": "ecotourismbali.com_(768p).png"
+      },
+      {
+        "id": 14,
+        "path": "/uploads/member.ecotourismbali.com_login(768p).png",
+        "project_id": 3,
+        "filename": "member.ecotourismbali.com_login(768p).png"
+      },
+      {
+        "id": 15,
+        "path": "/uploads/member.ecotourismbali.com_login(768p)_(2).png",
+        "project_id": 3,
+        "filename": "member.ecotourismbali.com_login(768p)_(2).png"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Spa Factory Bali",
+    "description": "Spa Factory Bali is a leading contract manufacturer specializing in premium spa and wellness products, based in the heart of Bali. This website was built using Laravel for robust backend development, paired with Tailwind CSS and Alpine.js to deliver a clean, responsive, and dynamic user interface.",
+    "status": "Completed",
+    "url": "https://spafactorybali.biz/",
+    "created_at": "2025-04-20T13:29:45.000Z",
+    "stacks": [
+      {
+        "id": 4,
+        "code": "laravel",
+        "name": "Laravel",
+        "image": "/uploads/stacks/Laravel.png"
+      },
+      {
+        "id": 9,
+        "code": "alpine",
+        "name": "Alpine.js",
+        "image": "/uploads/stacks/Alpine.js.png"
+      },
+      {
+        "id": 3,
+        "code": "tailwind",
+        "name": "Tailwind",
+        "image": "/uploads/stacks/Tailwind_CSS.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 16,
+        "path": "/uploads/sfb-1.4344631.png",
+        "project_id": 4,
+        "filename": "sfb-1.4344631.png"
+      },
+      {
+        "id": 17,
+        "path": "/uploads/sfb-2.9880fa7.png",
+        "project_id": 4,
+        "filename": "sfb-2.9880fa7.png"
+      },
+      {
+        "id": 18,
+        "path": "/uploads/sfb-3.c4b4156.png",
+        "project_id": 4,
+        "filename": "sfb-3.c4b4156.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hiro Group",
+    "description": "Hiro Group is a corporate landing page designed to showcase the company’s services and brand identity. I developed the site using WordPress with a custom-built theme tailored specifically to the client's needs. Leveraging Advanced Custom Fields (ACF), I provided flexible and dynamic content management capabilities.\n\nThe theme was developed using PHP and jQuery, enabling interactive features and a smooth user experience. This approach ensures the client can easily update content while maintaining consistent design and performance.",
+    "status": "Completed",
+    "url": "https://hirogroup.co.id",
+    "created_at": "2025-04-20T13:29:46.000Z",
+    "stacks": [
+      {
+        "id": 6,
+        "code": "wordpress",
+        "name": "Wordpress",
+        "image": "/uploads/stacks/wordpress.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 19,
+        "path": "/uploads/hirogroup.co.id_(768p).png",
+        "project_id": 5,
+        "filename": "hirogroup.co.id_(768p).png"
+      },
+      {
+        "id": 20,
+        "path": "/uploads/hirogroup.co.id_whats-on_(768p).png",
+        "project_id": 5,
+        "filename": "hirogroup.co.id_whats-on_(768p).png"
+      },
+      {
+        "id": 21,
+        "path": "/uploads/hirogroup.co.id_brand_sushi-hiro_(768p).png",
+        "project_id": 5,
+        "filename": "hirogroup.co.id_brand_sushi-hiro_(768p).png"
+      },
+      {
+        "id": 22,
+        "path": "/uploads/hirogroup.co.id_brands_(768p).png",
+        "project_id": 5,
+        "filename": "hirogroup.co.id_brands_(768p).png"
+      },
+      {
+        "id": 23,
+        "path": "/uploads/hirogroup.co.id_contact-us_(768p).png",
+        "project_id": 5,
+        "filename": "hirogroup.co.id_contact-us_(768p).png"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Vanilium",
+    "description": "Vanilium is a modern corporate landing page built to reflect the brand’s professionalism and innovation. I developed a custom WordPress theme using PHP and jQuery, tailored specifically to the client’s design and functionality requirements.\n\nBy integrating Advanced Custom Fields (ACF), the site features a highly flexible and user-friendly content management system, allowing the client to easily manage and update key sections without touching code. This solution delivers both performance and ease of maintenance, aligning with Vanilium’s corporate vision.\n\n",
+    "status": "Completed",
+    "url": "https://vanilium.id/",
+    "created_at": "2025-04-20T13:29:49.000Z",
+    "stacks": [
+      {
+        "id": 6,
+        "code": "wordpress",
+        "name": "Wordpress",
+        "image": "/uploads/stacks/wordpress.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 37,
+        "path": "/uploads/vanilium.id_(768p).png",
+        "project_id": 11,
+        "filename": "vanilium.id_(768p).png"
+      },
+      {
+        "id": 38,
+        "path": "/uploads/vanilium.id_products_(768p).png",
+        "project_id": 11,
+        "filename": "vanilium.id_products_(768p).png"
+      },
+      {
+        "id": 39,
+        "path": "/uploads/vanilium.id_our-story_(768p).png",
+        "project_id": 11,
+        "filename": "vanilium.id_our-story_(768p).png"
+      },
+      {
+        "id": 40,
+        "path": "/uploads/vanilium.id_find-us_(768p).png",
+        "project_id": 11,
+        "filename": "vanilium.id_find-us_(768p).png"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Lippo Cikarang Cosmopolis Map",
+    "description": "The Lippo Cikarang Cosmopolitan Map features an interactive custom map designed to identify and explore each housing cluster with clickable, dynamic elements. Developed using WordPress, jQuery, and Advanced Custom Fields (ACF), the platform provides flexible content management and an engaging user experience.\n\n",
+    "status": "Completed",
+    "url": "https://lccmap.com/",
+    "created_at": "2025-04-20T13:29:49.000Z",
+    "stacks": [
+      {
+        "id": 6,
+        "code": "wordpress",
+        "name": "Wordpress",
+        "image": "/uploads/stacks/wordpress.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 54,
+        "path": "/uploads/lccmap.com_(768p).png",
+        "project_id": 13,
+        "filename": "lccmap.com_(768p).png"
+      },
+      {
+        "id": 55,
+        "path": "/uploads/lccmap.com_(768p)_(1).png",
+        "project_id": 13,
+        "filename": "lccmap.com_(768p)_(1).png"
+      },
+      {
+        "id": 56,
+        "path": "/uploads/lccmap.com_(768p)_(2).png",
+        "project_id": 13,
+        "filename": "lccmap.com_(768p)_(2).png"
+      },
+      {
+        "id": 57,
+        "path": "/uploads/lccmap.com_(768p)_(3).png",
+        "project_id": 13,
+        "filename": "lccmap.com_(768p)_(3).png"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Amerta Jiwa",
+    "description": "Amerta Jiwa is a corporate landing page designed to present the brand's identity and services with clarity and elegance. I developed a custom WordPress theme using PHP and jQuery, integrating Advanced Custom Fields (ACF) to provide a flexible and intuitive content management experience.\n\nThis setup empowers the client to manage content effortlessly while maintaining consistent layout and design. The result is a professional, responsive website tailored to Amerta Jiwa’s brand values.",
+    "status": "Completed",
+    "url": "https://amertajiwa.com",
+    "created_at": "2025-04-20T13:29:50.000Z",
+    "stacks": [
+      {
+        "id": 6,
+        "code": "wordpress",
+        "name": "Wordpress",
+        "image": "/uploads/stacks/wordpress.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 49,
+        "path": "/uploads/amertajiwa.com_(768p).png",
+        "project_id": 12,
+        "filename": "amertajiwa.com_(768p).png"
+      },
+      {
+        "id": 50,
+        "path": "/uploads/amertajiwa.com_(768p)_(1).png",
+        "project_id": 12,
+        "filename": "amertajiwa.com_(768p)_(1).png"
+      },
+      {
+        "id": 51,
+        "path": "/uploads/amertajiwa.com_reach-us_(768p).png",
+        "project_id": 12,
+        "filename": "amertajiwa.com_reach-us_(768p).png"
+      },
+      {
+        "id": 52,
+        "path": "/uploads/amertajiwa.com_our-story_(768p).png",
+        "project_id": 12,
+        "filename": "amertajiwa.com_our-story_(768p).png"
+      },
+      {
+        "id": 53,
+        "path": "/uploads/amertajiwa.com_kayu-spa_(768p).png",
+        "project_id": 12,
+        "filename": "amertajiwa.com_kayu-spa_(768p).png"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "TXJ Booking Pages",
+    "description": "TXJ Booking Pages is a user-friendly interface designed to streamline the booking process for accommodations, activities, restaurants, and products offered on the TXJ platform. Built with React.js, the interface delivers a responsive and seamless user experience.\n\nThis project is integrated with the V3 Leisure OBX (Open Booking Exchange) Service, enabling real-time availability and bookings across multiple categories. The solution supports TXJ’s mission to connect travelers with authentic local experiences through a modern, efficient digital platform.\n\n",
+    "status": "Completed",
+    "url": "https://niigata-kankou.or.jp/txj/",
+    "created_at": "2025-04-20T13:29:57.000Z",
+    "stacks": [
+      {
+        "id": 5,
+        "code": "react",
+        "name": "React.js",
+        "image": "/uploads/stacks/React.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 41,
+        "path": "/uploads/niigata-kankou.or.jp_txj_(768p).png",
+        "project_id": 6,
+        "filename": "niigata-kankou.or.jp_txj_(768p).png"
+      },
+      {
+        "id": 42,
+        "path": "/uploads/niigata-kankou.or.jp_txj_(768p)_(1).png",
+        "project_id": 6,
+        "filename": "niigata-kankou.or.jp_txj_(768p)_(1).png"
+      },
+      {
+        "id": 43,
+        "path": "/uploads/kagamino.tours_(768p).png",
+        "project_id": 6,
+        "filename": "kagamino.tours_(768p).png"
+      },
+      {
+        "id": 44,
+        "path": "/uploads/kagamino.tours_(768p)_(2).png",
+        "project_id": 6,
+        "filename": "kagamino.tours_(768p)_(2).png"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "V3 Leisure",
+    "description": "V3 Leisure is an interactive booking platform designed to offer a seamless experience for reserving accommodations, activities, restaurants, and products. The project also features an interactive map integrated with detailed guides on Points of Interest and Experiences, enhancing user engagement and trip planning.\n\nBuilt with Vue.js, the platform is integrated with the V3 Leisure OBX (Open Booking Exchange) Service to enable real-time availability and bookings. This project provides travelers with a rich, intuitive interface that connects them to curated local experiences.\n\n",
+    "status": "Completed",
+    "url": "",
+    "created_at": "2025-04-20T13:29:59.000Z",
+    "stacks": [
+      {
+        "id": 8,
+        "code": "vue",
+        "name": "Vue.js",
+        "image": "/uploads/stacks/Vue.js.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 45,
+        "path": "/uploads/explore-txsaudi.netlify.app_(768p).png",
+        "project_id": 7,
+        "filename": "explore-txsaudi.netlify.app_(768p).png"
+      },
+      {
+        "id": 46,
+        "path": "/uploads/explore-txsaudi.netlify.app_(768p)_(3).png",
+        "project_id": 7,
+        "filename": "explore-txsaudi.netlify.app_(768p)_(3).png"
+      },
+      {
+        "id": 47,
+        "path": "/uploads/explore-txsaudi.netlify.app_(768p)_(2).png",
+        "project_id": 7,
+        "filename": "explore-txsaudi.netlify.app_(768p)_(2).png"
+      },
+      {
+        "id": 48,
+        "path": "/uploads/explore-txsaudi.netlify.app_(768p)_(1).png",
+        "project_id": 7,
+        "filename": "explore-txsaudi.netlify.app_(768p)_(1).png"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "UKMJagoWAn",
+    "description": "UKMJagoWAn is a digital catalog platform dedicated to showcasing small businesses across Indonesia, organized by ukmindonesia.id in partnership with WhatsApp. The website serves to increase visibility and outreach for selected small businesses, helping them connect with a broader audience.\n\nBuilt using the Laravel Framework and jQuery, the platform offers a smooth and efficient browsing experience, enabling users to easily explore diverse local enterprises and their offerings.",
+    "status": "Completed",
+    "url": "https://ukmjagowan.id/",
+    "created_at": "2025-04-20T13:30:00.000Z",
+    "stacks": [
+      {
+        "id": 4,
+        "code": "laravel",
+        "name": "Laravel",
+        "image": "/uploads/stacks/Laravel.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 24,
+        "path": "/uploads/ukmjagowan.id_(768p).png",
+        "project_id": 8,
+        "filename": "ukmjagowan.id_(768p).png"
+      },
+      {
+        "id": 25,
+        "path": "/uploads/ukmjagowan.id_katalog_ukmjuwara-go-digital(768p).png",
+        "project_id": 8,
+        "filename": "ukmjagowan.id_katalog_ukmjuwara-go-digital(768p).png"
+      },
+      {
+        "id": 26,
+        "path": "/uploads/ukmjagowan.id_ukm_215project(768p).png",
+        "project_id": 8,
+        "filename": "ukmjagowan.id_ukm_215project(768p).png"
+      },
+      {
+        "id": 27,
+        "path": "/uploads/ukmjagowan.id_berita(768p).png",
+        "project_id": 8,
+        "filename": "ukmjagowan.id_berita(768p).png"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Early Theory",
+    "description": "Early Theory is an online service platform offering tarot readings alongside a selection of related products. Developed as an e-commerce site tailored specifically for tarot services, this project was completed within one month in collaboration with a partner.\n\nI contributed as the front-end developer and UI/UX designer, focusing on creating an engaging and intuitive user experience. The back-end was built using Laravel, while jQuery was used to handle JavaScript interactions.\n\n",
+    "status": "Completed",
+    "url": "https://earlytheory.com/",
+    "created_at": "2025-04-20T13:30:01.000Z",
+    "stacks": [
+      {
+        "id": 4,
+        "code": "laravel",
+        "name": "Laravel",
+        "image": "/uploads/stacks/Laravel.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 28,
+        "path": "/uploads/earlytheory.com_(768p).png",
+        "project_id": 9,
+        "filename": "earlytheory.com_(768p).png"
+      },
+      {
+        "id": 29,
+        "path": "/uploads/earlytheory.com_tarot(768p).png",
+        "project_id": 9,
+        "filename": "earlytheory.com_tarot(768p).png"
+      },
+      {
+        "id": 30,
+        "path": "/uploads/earlytheory.com_product_Bahasa-Cinta(768p).png",
+        "project_id": 9,
+        "filename": "earlytheory.com_product_Bahasa-Cinta(768p).png"
+      },
+      {
+        "id": 31,
+        "path": "/uploads/earlytheory.com_workshop_Beginner-Tarot-Programme(768p).png",
+        "project_id": 9,
+        "filename": "earlytheory.com_workshop_Beginner-Tarot-Programme(768p).png"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Senimart",
+    "description": "Senimart is an online platform where art lovers can easily find and purchase artworks without visiting a gallery. It also serves as a community space for artists to connect, collaborate, and showcase their work through various creative projects. The website is an e-commerce platform built with Laravel for the back-end and jQuery for the front-end interactions.\n\n",
+    "status": "Completed",
+    "url": "https://senimart.id/",
+    "created_at": "2025-04-20T13:31:01.000Z",
+    "stacks": [
+      {
+        "id": 4,
+        "code": "laravel",
+        "name": "Laravel",
+        "image": "/uploads/stacks/Laravel.png"
+      },
+      {
+        "id": 7,
+        "code": "jQuery",
+        "name": "jQuery",
+        "image": "/uploads/stacks/jQuery.png"
+      }
+    ],
+    "images": [
+      {
+        "id": 33,
+        "path": "/uploads/senimart.id_(768p).png",
+        "project_id": 10,
+        "filename": "senimart.id_(768p).png"
+      },
+      {
+        "id": 34,
+        "path": "/uploads/senimart.id_artists(768p).png",
+        "project_id": 10,
+        "filename": "senimart.id_artists(768p).png"
+      },
+      {
+        "id": 35,
+        "path": "/uploads/senimart.id_artwork_bella-disparita(768p).png",
+        "project_id": 10,
+        "filename": "senimart.id_artwork_bella-disparita(768p).png"
+      },
+      {
+        "id": 36,
+        "path": "/uploads/senimart.id_artworks(768p).png",
+        "project_id": 10,
+        "filename": "senimart.id_artworks(768p).png"
+      }
+    ]
+  }
+]

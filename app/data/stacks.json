@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "code": "next",
+    "name": "Next.js",
+    "image": "/uploads/stacks/Next.js.png"
+  },
+  {
+    "id": 2,
+    "code": "express",
+    "name": "Express.js",
+    "image": "/uploads/stacks/Express.png"
+  },
+  {
+    "id": 3,
+    "code": "tailwind",
+    "name": "Tailwind",
+    "image": "/uploads/stacks/Tailwind_CSS.png"
+  },
+  {
+    "id": 4,
+    "code": "laravel",
+    "name": "Laravel",
+    "image": "/uploads/stacks/Laravel.png"
+  },
+  {
+    "id": 5,
+    "code": "react",
+    "name": "React.js",
+    "image": "/uploads/stacks/React.png"
+  },
+  {
+    "id": 6,
+    "code": "wordpress",
+    "name": "Wordpress",
+    "image": "/uploads/stacks/wordpress.png"
+  },
+  {
+    "id": 7,
+    "code": "jQuery",
+    "name": "jQuery",
+    "image": "/uploads/stacks/jQuery.png"
+  },
+  {
+    "id": 8,
+    "code": "vue",
+    "name": "Vue.js",
+    "image": "/uploads/stacks/Vue.js.png"
+  },
+  {
+    "id": 9,
+    "code": "alpine",
+    "name": "Alpine.js",
+    "image": "/uploads/stacks/Alpine.js.png"
+  },
+  {
+    "id": 10,
+    "code": "flutter",
+    "name": "Flutter",
+    "image": "/uploads/stacks/Flutter.png"
+  }
+]

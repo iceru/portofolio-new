@@ -1,5 +1,6 @@
 export interface StackType {
     id: number
+    code: string
     name: string
     image: string
 }
@@ -12,6 +13,7 @@ export interface ProjectType {
     stacks: StackType[]
     images: ImageType[]
     url: string
+    created_at: string
 }
 
 export interface ImageType {

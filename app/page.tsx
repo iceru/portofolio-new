@@ -1,6 +1,4 @@
-import github from "./images/github.png";
-import linkedin from "./images/linkedin.png";
-import twitter from "./images/twitter.png";
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -27,13 +25,13 @@ export default function Home() {
           <div className='inline-flex mr-4 items-center transition-all duration-500 ease-in-out px-4 py-2 border-2 border-neutral-800 rounded-xl'>
             <p className="mr-2 font-bold text-lg">Social:</p>
             <a href="https://github.com/iceru" target="_blank" className="hover:opacity-80 transition mr-4">
-              <Image width={24} src={github} alt="Github" />
+              <Image width={24} height={24} src="/images/github.png" alt="Github" />
             </a>
             <a href="https://www.linkedin.com/in/hafizeto/" target="_blank" className="hover:opacity-80 transition mr-4">
-              <Image width={24} src={linkedin} alt="LinkedIn" />
+              <Image width={24} height={24} src="/images/linkedin.png" alt="LinkedIn" />
             </a>
             <a href="https://x.com/Hafizeto" target="_blank" className="hover:opacity-80 transition">
-              <Image width={24} src={twitter} alt="Twitter" />
+              <Image width={24} height={24} src="/images/twitter.png" alt="Twitter" />
             </a>
           </div>
           <Link href="/projects" className="px-5 py-2.5 font-bold bg-neutral-800 hover:bg-neutral-700 transition text-white text-lg rounded-xl">
