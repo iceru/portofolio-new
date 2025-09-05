@@ -58,11 +58,6 @@ function Navigation() {
                         </Link>
                     </li>
                     <li className='transition hover:opacity-90 text-3xl mb-14'>
-                        <Link href="/works">
-                            Professional <br /> Works
-                        </Link>
-                    </li>
-                    <li className='transition hover:opacity-90 text-3xl mb-14'>
                         <Link href="/projects">
                             Projects
                         </Link>
